@@ -64,9 +64,6 @@ class Deck(object):
     def deal_card(self):
         return self.deck.pop(0)
 
-    """
-    players will be a list of 
-    """
     def deal_all_cards(self, players):
         player = players[0]
         while self.deck:
@@ -257,5 +254,4 @@ if __name__ == "__main__":
     game = Game(players, num_decks)
     game.deal_cards()
 
-    # now for the actual game logic
     game.play_game()
